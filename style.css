@@ -1,0 +1,60 @@
+.pricing-container{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+.pricing-plan{
+    font: 1.3rem black bolder ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 230px;
+    background-color: rgb(248, 220, 117);
+    margin: 20px;
+    border: 3px rgb(117, 82, 6) solid;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+.plan-price:hover{
+   font-size: 1.8rem;
+   color: darkred;
+}
+.pricing-plan:hover{
+    width: 350px;
+    height: 250px;
+}
+
+
+.plan-title ,.plan-price{
+    text-align: center;
+    font-weight: bold;
+}
+.plan-price{
+    font-size: 2rem;
+}
+.plan-button{
+    background-color: rgb(183, 180, 186);
+     
+}
+body{
+    background-color: rgb(120, 244, 195);
+       
+}
+.plan-button:hover{
+    background-color: red;
+    height: 30px;
+    width: 70px
+}
+@media (max-width: 1250px) {
+    .pricing-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }  
+    .pricing-plan{
+        margin: 30px;
+    }
+}
